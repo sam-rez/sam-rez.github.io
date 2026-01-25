@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sam R | Software Engineer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- NAV -->
+    <header class="nav">
+      <div class="nav__inner">
+        <a class="nav__brand" href="#home">Home</a>
+
+        <nav class="nav__links" aria-label="Primary">
+          <a class="nav__link" href="#about">About Me</a>
+          <a class="nav__link" href="#work">Work</a>
+          <a class="nav__link" href="#projects">Projects</a>
+          <a class="nav__link" href="#contact">Contact</a>
+          <a class="nav__btn" href="assets/resume.pdf" target="_blank" rel="noopener">Resume</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <main>
+      <section id="home" class="hero">
+        <div class="hero__bg" aria-hidden="true"></div>
+        <div class="hero__overlay" aria-hidden="true"></div>
+
+        <div class="hero__content container">
+          <img class="hero__avatar" src="assets/avatar.jpg" alt="Portrait of Sam" />
+          <h1 class="hero__title">SAM R</h1>
+          <p class="hero__subtitle">software engineer | backend systems | lifelong learner</p>
+
+          <div class="hero__cta">
+            <a class="btn" href="#about">More About Me</a>
+            <a class="btn btn--ghost" href="assets/resume.pdf" target="_blank" rel="noopener">Resume</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section section--dark">
+        <div class="container">
+          <h2 class="section__title">Hey there! I’m Sam, a software engineer.</h2>
+          <p class="section__lead">
+            I build backend services and APIs (Java/Spring/MySQL), and I’m exploring AI engineering
+            through practical projects like RAG chatbots.
+          </p>
+
+          <div class="prose">
+            <p>
+              This is a single-page site hosted on GitHub Pages. The top nav scrolls to each section,
+              and the active tab highlights based on scroll position.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- WORK -->
+      <section id="work" class="section section--dark">
+        <div class="container">
+          <div class="section__header">
+            <h2 class="section__title">Selected Work Experience</h2>
+            <p class="section__hint">
+              For full details, see my <a href="#" target="_blank" rel="noopener">LinkedIn</a>.
+            </p>
+          </div>
+
+          <div class="cards">
+            <article class="card">
+              <div class="card__logo">W</div>
+              <div class="card__body">
+                <h3 class="card__title">Walmart Global Tech</h3>
+                <p class="card__meta">Senior Software Engineer • 20XX – Present</p>
+                <ul class="card__bullets">
+                  <li>Built and scaled backend APIs for ad/creative workflows.</li>
+                  <li>Led modernization efforts (Java 21, Spring Boot 3.x, migrations).</li>
+                  <li>Improved reliability and developer productivity across services.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card__logo">A</div>
+              <div class="card__body">
+                <h3 class="card__title">Previous Company</h3>
+                <p class="card__meta">Software Engineer • 20XX – 20XX</p>
+                <ul class="card__bullets">
+                  <li>Designed REST APIs and data pipelines.</li>
+                  <li>Improved latency and reduced error rates.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="section section--light">
+        <div class="container">
+          <h2 class="section__title section__title--dark">Projects</h2>
+
+          <div class="project">
+            <div class="project__media">
+              <img src="assets/project1.jpg" alt="Screenshot of project" />
+            </div>
+            <div class="project__text">
+              <h3>SamGPT (RAG Chatbot)</h3>
+              <p>
+                A retrieval-augmented chatbot that answers questions using indexed documents, with
+                source citations.
+              </p>
+              <a class="link" href="#" target="_blank" rel="noopener">Access it</a>
+            </div>
+          </div>
+
+          <div class="project project--reverse">
+            <div class="project__media">
+              <img src="assets/project2.jpg" alt="Screenshot of project" />
+            </div>
+            <div class="project__text">
+              <h3>Another Project</h3>
+              <p>Short description. What it does, why it’s interesting.</p>
+              <a class="link" href="#" target="_blank" rel="noopener">Access it</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section section--dark">
+        <div class="container">
+          <h2 class="section__title">Connect with me!</h2>
+
+          <div class="contact-grid">
+            <div class="contact-card">
+              <div class="contact-card__title">Email</div>
+              <a class="contact-card__value" href="mailto:you@example.com">you@example.com</a>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card__title">Socials</div>
+              <div class="contact-card__icons">
+                <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+                <a href="#" target="_blank" rel="noopener" aria-label="GitHub">gh</a>
+                <a href="#" target="_blank" rel="noopener" aria-label="X">x</a>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card__title">Phone</div>
+              <div class="contact-card__value">+1 (XXX) XXX-XXXX</div>
+            </div>
+          </div>
+
+          <footer class="footer">© <span id="year"></span> Sam R</footer>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
