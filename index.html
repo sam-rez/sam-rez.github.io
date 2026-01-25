@@ -13,7 +13,13 @@
       <div class="nav__inner">
         <a class="nav__brand" href="#home">Home</a>
 
-        <nav class="nav__links" aria-label="Primary">
+        <!-- Mobile menu button -->
+        <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+          Menu <span class="nav__icon" aria-hidden="true">☰</span>
+        </button>
+
+        <!-- Nav links -->
+        <nav class="nav__links" id="navMenu" aria-label="Primary">
           <a class="nav__link" href="#about">About Me</a>
           <a class="nav__link" href="#work">Work</a>
           <a class="nav__link" href="#projects">Projects</a>
@@ -31,7 +37,7 @@
 
         <div class="hero__content container">
           <img class="hero__avatar" src="assets/avatar.jpg" alt="Portrait of Sam" />
-          <h1 class="hero__title">SAM R</h1>
+          <h1 class="hero__title">SAM REZAIE</h1>
           <p class="hero__subtitle">software engineer | backend systems | lifelong learner</p>
 
           <div class="hero__cta">
@@ -63,7 +69,7 @@
       <section id="work" class="section section--dark">
         <div class="container">
           <div class="section__header">
-            <h2 class="section__title">Selected Work Experience</h2>
+            <h2 class="section__title">Work Experience</h2>
             <p class="section__hint">
               For full details, see my <a href="#" target="_blank" rel="noopener">LinkedIn</a>.
             </p>
@@ -156,7 +162,7 @@
             </div>
           </div>
 
-          <footer class="footer">© <span id="year"></span> Sam R</footer>
+          <footer class="footer">© <span id="year"></span> Sam Rezaie</footer>
         </div>
       </section>
     </main>

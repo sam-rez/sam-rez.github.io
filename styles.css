@@ -231,9 +231,22 @@ a{ color: var(--accent); }
 /* CONTACT */
 .contact-grid{
   margin-top: 34px;
-  display:grid;
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 22px;
+}
+/* Tablet: 2 columns */
+@media (max-width: 900px){
+  .contact-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Phone: 1 column */
+@media (max-width: 650px){
+  .contact-grid{
+    grid-template-columns: 1fr;
+  }
 }
 .contact-card{
   background: #fff;
@@ -270,16 +283,45 @@ a{ color: var(--accent); }
 }
 
 /* RESPONSIVE */
-@media (max-width: 900px){
-  .nav__links{ gap: 16px; }
-  .project{ grid-template-columns: 1fr; }
-  .project--reverse .project__media{ order: 0; }
-  .contact-grid{ grid-template-columns: 1fr; }
+/* Mobile toggle button (hidden on desktop) */
+.nav__toggle{
+  display: none;
+  border: 2px solid var(--accent);
+  background: transparent;
+  color: var(--accent);
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
 }
+.nav__icon{ margin-left: 6px; }
+
+/* Mobile behavior */
 @media (max-width: 650px){
-  .nav__inner{ height: 64px; }
-  .nav__links{ gap: 12px; }
-  .nav__link{ display:none; } /* keep it simple on mobile; later you can add a hamburger */
-  .nav__btn{ display:inline-block; }
+  .nav__toggle{ display: inline-flex; align-items:center; }
+
+  /* Turn links into a dropdown panel */
+  .nav__links{
+    position: absolute;
+    top: 72px;               /* nav height */
+    left: 0;
+    right: 0;
+    background: rgba(255,255,255,.96);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0,0,0,.08);
+    padding: 12px 24px 18px;
+    display: none;           /* hidden by default */
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav__links.is-open{ display: flex; }
+
+  /* Keep links visible (don’t hide them like before) */
+  .nav__link{ display: block; padding: 10px 0; }
+  .nav__btn{ align-self: flex-start; margin-top: 6px; }
+
+  /* Adjust if your nav height differs */
   .hero{ padding-top: 64px; }
 }
+
