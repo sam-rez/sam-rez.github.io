@@ -242,7 +242,7 @@ a{ color: var(--accent); }
 .link::after{
   content:"";
   display:block;
-  width: 90px;
+  width: 90%;
   height: 3px;
   margin-top: 10px;
   background: var(--accent);
