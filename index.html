@@ -50,16 +50,12 @@
       <!-- ABOUT -->
       <section id="about" class="section section--light">
         <div class="container">
-          <h2 class="section__title">Hey there! I’m Sam, a software engineer.</h2>
-          <p class="section__lead">
-            I build backend services and APIs (Java/Spring/MySQL), and I’m exploring AI engineering
-            through practical projects like RAG chatbots.
-          </p>
 
-          <div class="prose">
-            <p>
-              This is a single-page site hosted on GitHub Pages. The top nav scrolls to each section,
-              and the active tab highlights based on scroll position.
+          <div class="section__header">
+            <h2 class="section__title">Hey there! I’m Sam, a software engineer.</h2>
+            <p class="section__lead">
+              I build backend services and APIs (Java/Spring/MySQL), and I’m exploring AI engineering
+              through practical projects like RAG chatbots.
             </p>
           </div>
         </div>
@@ -161,8 +157,7 @@
                 <h3 class="card__title">Amazon Web Services</h3>
                 <p class="card__meta">Software Development Engineer Intern • Summer 2016</p>
                 <ul class="card__bullets">
-                  <li>Designed REST APIs and data pipelines.</li>
-                  <li>Improved latency and reduced error rates.</li>
+                  <li>Engineered full stack application with AWS cloud computing tools (S3, API Gateway, Lambda, and DynamoDB)</li>
                 </ul>
               </div>
             </article>
@@ -187,6 +182,17 @@
               <div class="card__body">
                 <h3 class="card__title">California Polytechnic State University, San Luis Obispo</h3>
                 <p class="card__meta">M.S. Computer Science</p>
+
+                <p class="card__meta">
+                  <a
+                    href="https://digitalcommons.calpoly.edu/theses/1811/"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Master’s thesis
+                  </a>
+                </p>
+
               </div>
             </article>
 
@@ -211,7 +217,10 @@
       <!-- PROJECTS -->
       <section id="projects" class="section section--light">
         <div class="container">
-          <h2 class="section__title section__title--dark">Projects</h2>
+
+          <div class="section__header">
+            <h2 class="section__title section__title--dark">Projects</h2>
+          </div>
 
           <div class="project">
             <div class="project__media">
@@ -241,14 +250,19 @@
       </section>
 
       <!-- CONTACT -->
-      <section id="contact" class="section section--dark section--centered">
+      <section id="contact" class="section section--dark">
         <div class="container">
-          <h2 class="section__title">Connect with me!</h2>
+
+          <div class="section__header">
+            <h2 class="section__title">Connect with me!</h2>
+          </div>
 
           <div class="contact-grid">
             <div class="contact-card">
               <div class="contact-card__title">Email</div>
-              <a class="contact-card__value" href="mailto:you@example.com">srezaie1226@gmail.com</a>
+              <a class="contact-card__value" href="mailto:you@example.com">
+                srezaie1226@gmail.com
+              </a>
             </div>
 
             <div class="contact-card">
@@ -263,11 +277,12 @@
             <div class="contact-card">
               <div class="contact-card__title">📍 Location</div>
               <div class="contact-card__value">San Francisco Bay Area</div>
-              <div class="contact-card__subvalue">(Open to remote)</div>
+              <div class="contact-card__subvalue">Open to remote</div>
             </div>
           </div>
 
           <footer class="footer">© <span id="year"></span> Sam Rezaie</footer>
+
         </div>
       </section>
     </main>
