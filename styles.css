@@ -132,6 +132,15 @@ body{
   border: 2px solid rgba(255,255,255,.45);
 }
 
+/* ABOUT ME */
+.inline-link {
+  color: var(--accent);
+  text-decoration: none;
+}
+.inline-link:hover {
+  opacity: 0.8;
+}
+
 /* SECTIONS */
 .section{
   padding: 92px 0;
