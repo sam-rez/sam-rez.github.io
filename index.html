@@ -21,7 +21,7 @@
         <!-- Nav links -->
         <nav class="nav__links" id="navMenu" aria-label="Primary">
           <a class="nav__link" href="#about">About Me</a>
-          <a class="nav__link" href="#work">Work</a>
+          <a class="nav__link" href="#experience">Experience</a>
           <a class="nav__link" href="#projects">Projects</a>
           <a class="nav__link" href="#contact">Contact</a>
           <a class="nav__btn" href="assets/resume.pdf" target="_blank" rel="noopener">Resume</a>
@@ -36,7 +36,7 @@
         <div class="hero__overlay" aria-hidden="true"></div>
 
         <div class="hero__content container">
-          <img class="hero__avatar" src="assets/avatar.jpg" alt="Portrait of Sam" />
+          <img class="hero__avatar" src="assets/avatar.png" alt="Portrait of Sam" />
           <h1 class="hero__title">SAM REZAIE</h1>
           <p class="hero__subtitle">software engineer | backend systems | lifelong learner</p>
 
@@ -48,7 +48,7 @@
       </section>
 
       <!-- ABOUT -->
-      <section id="about" class="section section--dark">
+      <section id="about" class="section section--light">
         <div class="container">
           <h2 class="section__title">Hey there! I’m Sam, a software engineer.</h2>
           <p class="section__lead">
@@ -65,9 +65,11 @@
         </div>
       </section>
 
-      <!-- WORK -->
-      <section id="work" class="section section--dark">
+      <!-- EXPERIENCE -->
+      <section id="experience" class="section section--dark">
         <div class="container">
+
+          <!-- Work Experience -->
           <div class="section__header">
             <h2 class="section__title">Work Experience</h2>
             <p class="section__hint">
@@ -77,23 +79,87 @@
 
           <div class="cards">
             <article class="card">
-              <div class="card__logo">W</div>
+              <div class="card__logo">
+                <img
+                  src="assets/walmart.jpg"
+                  alt="Walmart logo"
+                  class="card__logo-img"
+                />
+              </div>
               <div class="card__body">
                 <h3 class="card__title">Walmart Global Tech</h3>
-                <p class="card__meta">Senior Software Engineer • 20XX – Present</p>
+                <p class="card__meta">Senior Software Engineer • Summer 2024 – Present</p>
                 <ul class="card__bullets">
                   <li>Built and scaled backend APIs for ad/creative workflows.</li>
-                  <li>Led modernization efforts (Java 21, Spring Boot 3.x, migrations).</li>
-                  <li>Improved reliability and developer productivity across services.</li>
                 </ul>
               </div>
             </article>
 
             <article class="card">
-              <div class="card__logo">A</div>
+              <div class="card__logo">
+                <img
+                  src="assets/koc.jpg"
+                  alt="KOC logo"
+                  class="card__logo-img"
+                />
+              </div>
               <div class="card__body">
-                <h3 class="card__title">Previous Company</h3>
-                <p class="card__meta">Software Engineer • 20XX – 20XX</p>
+                <h3 class="card__title">KeepOnCoding.io</h3>
+                <p class="card__meta">Senior Software Engineer • Summer 2022 – Summer 2024</p>
+                <ul class="card__bullets">
+                  <li>Designed REST APIs and data pipelines.</li>
+                  <li>Improved latency and reduced error rates.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card__logo">
+                <img
+                  src="assets/bhhc.jpg"
+                  alt="BHHC logo"
+                  class="card__logo-img"
+                />
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Berkshire Hathaway Homestate Companies</h3>
+                <p class="card__meta">Software Engineer II • Summer 2019 – Summer 2022</p>
+                <ul class="card__bullets">
+                  <li>Designed REST APIs and data pipelines.</li>
+                  <li>Improved latency and reduced error rates.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card__logo">
+                <img
+                  src="assets/wd.jpg"
+                  alt="WD logo"
+                  class="card__logo-img"
+                />
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Western Digital</h3>
+                <p class="card__meta">Senior Software Engineer • Summer 2017 – Winter 2018</p>
+                <ul class="card__bullets">
+                  <li>Designed REST APIs and data pipelines.</li>
+                  <li>Improved latency and reduced error rates.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card__logo">
+                <img
+                  src="assets/aws.jpg"
+                  alt="AWS logo"
+                  class="card__logo-img"
+                />
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Amazon Web Services</h3>
+                <p class="card__meta">Software Development Engineer Intern • Summer 2016</p>
                 <ul class="card__bullets">
                   <li>Designed REST APIs and data pipelines.</li>
                   <li>Improved latency and reduced error rates.</li>
@@ -101,6 +167,44 @@
               </div>
             </article>
           </div>
+
+          <!-- Education -->
+          <div class="experience-divider"></div>
+
+          <div class="section__header">
+            <h3 class="section__title section__title--small">Education</h3>
+          </div>
+
+          <div class="cards">
+            <article class="card">
+              <div class="card__logo">
+                <img
+                  src="assets/cp.svg"
+                  alt="CP logo"
+                  class="card__logo-img"
+                />
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">California Polytechnic State University, San Luis Obispo</h3>
+                <p class="card__meta">M.S. Computer Science</p>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card__logo">
+                <img
+                  src="assets/uci.svg"
+                  alt="UCI logo"
+                  class="card__logo-img"
+                />
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Univeristy of California, Irvine</h3>
+                <p class="card__meta">B.A. International Studies</p>
+              </div>
+            </article>
+          </div>
+
         </div>
       </section>
 
@@ -137,14 +241,14 @@
       </section>
 
       <!-- CONTACT -->
-      <section id="contact" class="section section--dark">
+      <section id="contact" class="section section--dark section--centered">
         <div class="container">
           <h2 class="section__title">Connect with me!</h2>
 
           <div class="contact-grid">
             <div class="contact-card">
               <div class="contact-card__title">Email</div>
-              <a class="contact-card__value" href="mailto:you@example.com">you@example.com</a>
+              <a class="contact-card__value" href="mailto:you@example.com">srezaie1226@gmail.com</a>
             </div>
 
             <div class="contact-card">
@@ -157,8 +261,9 @@
             </div>
 
             <div class="contact-card">
-              <div class="contact-card__title">Phone</div>
-              <div class="contact-card__value">+1 (XXX) XXX-XXXX</div>
+              <div class="contact-card__title">📍 Location</div>
+              <div class="contact-card__value">San Francisco Bay Area</div>
+              <div class="contact-card__subvalue">(Open to remote)</div>
             </div>
           </div>
 
