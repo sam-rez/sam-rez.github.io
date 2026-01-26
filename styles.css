@@ -289,6 +289,11 @@ a{ color: var(--accent); }
   margin-bottom: 12px;
 }
 
+.contact-card__icons{
+  display: flex;
+  align-items: center;
+}
+
 .contact-card__title{
   font-weight: 900;
   letter-spacing: .18em;
@@ -320,35 +325,49 @@ a{ color: var(--accent); }
   font-size: 14px;
 }
 
-.contact-card__icons{
-  display: flex;
-  gap: 14px;
-  justify-content: center;
-}
-
-.icon-btn{
-  width: 44px;
-  height: 44px;
+/* ICON BUTTON (container) */
+.icon-btn {
+  width: 48px;
+  height: 48px;
   display: grid;
   place-items: center;
+
   border-radius: 14px;
-  background: color-mix(in srgb, var(--accent) 14%, transparent);
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+
   color: var(--accent);
   text-decoration: none;
-  border: 1px solid color-mix(in srgb, var(--accent) 22%, transparent);
-  transition: transform .15s ease, background .15s ease;
+
+  transition:
+    transform 0.15s ease,
+    background 0.15s ease,
+    box-shadow 0.15s ease;
 }
 
-.icon-btn:hover{
+.icon-btn:hover {
   transform: translateY(-2px);
-  background: color-mix(in srgb, var(--accent) 22%, transparent);
+  background: rgba(255,255,255,0.14);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
 }
 
-.icon{
-  width: 22px;
-  height: 22px;
-  fill: currentColor; /* key: makes svg adopt your theme color */
+/* SVG ICON */
+.icon {
+  width: 28px;
+  height: 28px;
+  display: block;
 }
+
+/* Force SVG internals to inherit theme color */
+.icon path,
+.icon circle,
+.icon rect,
+.icon polygon,
+.icon line {
+  fill: currentColor;
+  stroke: currentColor;
+}
+
 
 .footer{
   text-align: center;
