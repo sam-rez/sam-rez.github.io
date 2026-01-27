@@ -256,6 +256,20 @@ a{ color: var(--accent); }
   margin-top: 10px;
   background: var(--accent);
 }
+/* PROJECTS — mobile stacking: text first, image second */
+@media (max-width: 650px) {
+  .project {
+    grid-template-columns: 1fr;   /* stack */
+    gap: 16px;
+  }
+
+  /* force consistent order on mobile */
+  .project__text { order: 1; }
+  .project__media { order: 2; }
+
+  /* undo the desktop reverse ordering on mobile */
+  .project--reverse .project__media { order: 2; }
+}
 
 /* CONTACT */
 .contact-grid{
